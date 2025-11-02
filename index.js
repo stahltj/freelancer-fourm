@@ -30,8 +30,8 @@ function createFreelancers() {
 
 //fuction to create single table row for freelancer
 function createFreelancerRow(freelancer) {
-  const tbody = document.getElementById(`freelancerTable`);
-  const row = document.createElement(`tr`);
+  const tbody = document.getElementById("freelancerTable");
+  const row = document.createElement("tr");
   row.innerHTML = ` <td>${freelancer.name}</td>
         <td>${freelancer.occupation}</td>
         <td>${freelancer.rate}</td>`;
@@ -41,7 +41,7 @@ function createFreelancerRow(freelancer) {
 function updateAverageRate() {
   //calcualte average rate
   const averageRate = totalRate / NUM_FREELANCERS;
-  document.getElementById(`averageRate`).innerHTML = averageRate;
+  document.getElementById("averageRate").innerHTML = averageRate.toFixed(2);
 }
 
 createFreelancers();

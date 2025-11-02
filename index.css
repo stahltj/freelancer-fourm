@@ -14,3 +14,7 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #ffffff; /* white */
 }
+
+.center-text {
+  text-align: center;
+}
